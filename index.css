@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* background-color:;
+    color: ; */
+    align-items: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.search{
+    color: aliceblue;
+    background: white;
+    border-color:  rgb(108, 117, 125);
+    color:  rgb(108, 117, 125);
+    height: 2px;
+    width: 1px;
+    border: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.15s, colour 0.15s;
+  }
+  .search:hover{
+    background: rgb(219, 220, 220) ;
+    color:  white;
+}
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: px;
+
+}
+
+.head-img {
+    width: 100px;
+}
+
+.heading {
+    font-size: 24px;
+    font-weight: bold;
+}
+.img-s{
+ height: 500px;
+ object-fit: cover;
+}
+
+
+
+.search-container {
+    position: relative;
+}
+
+.search-input {
+    padding-right: 3px; /* Adjust as needed */
+    height: 1.75rem;
+    width: 10rem;
+    border: 1px solid black;
+    border-radius: 180px;
+}
+
+.search-btn {
+    position: relative;
+    top: 0;
+    right: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+.search-icon {
+    width: 2rem; 
+    height: 2rem; 
+    filter: invert();
+}
+
+
+.info-img {
+    width: 50px;
+}
+.info-img:hover{
+    transform: translateY(-2px);
+}
+.info-img:active{
+    transform: translateY(2px);
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    border-top: 1px solid black;
+}
+
+.item-info {
+    margin: 10px;
+    border: 1px solid white;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.item {
+    width: 200px;
+    height: auto;
+}
+
+p {
+    margin: 10px 0;
+    font-weight: bold;
+}
+.price{
+    font-size: 12px;
+    margin: 10px 0;
+    color: rgb(181, 180, 180);
+}
+.order-button, .cart-button {
+    display: inline-block;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 5px 0px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.order-button:hover, .cart-button:hover {
+    background-color: #45a049;
+}
+
+.cart-button img {
+    width: 20px; /* Adjust size as needed */
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+@media (max-width: 640px){
+
+    .head{
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .head head-img{
+        width: 60px;
+    }
+
+
+
+}
